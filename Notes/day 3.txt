@@ -1,0 +1,62 @@
+DAY-3:
+
+3 types of instructions in C:-
+a] type declaration ins:
+to declare the type of variables in a C program.
+any var used in the program must be declared before using it in any statement.
+type declaration written in beginning of main() func
+eg. int bas;
+char name,code;
+1) int i=10,j=25;
+2)float a=1.5,b=a+3.1; right
+float b=a+3.1,a=1.5; wrong coz using a before even defining it
+3)int a,b,c,d;
+int a=b=c=10; right
+int a=b=c=d=10; not coz "
+b] arithmetic ins:
+to perform arithmetic operations bw constants nd variables.
+var name on left= and var name&cons on right(connected by arth oper + - *)
+
+VAR AND CONS TOGETHER ARE CALLED OPERANDS
+
+C arth stm 3 types=
+1: real mode: all operands are either real cons or real var
+2: int mode: " " " " int var or int cons
+3: mixed mode: some of operands are int nd some are real.
+
+rules:
+a= only 1 var on left side .eg.z=k+l
+b= / used for dividing %modular opt for remainder (not apply on float) eg. 10/2 yields 5 and 10%2 yields 0
+    						" remainder sign as numerator's
+c= storing char cons in cons var. 
+eg. char a,b,d; 
+a='F';
+b='G';
+d='+';
+as per ASCII F=70 ND G=71
+d=arth opt can be perform on ints,floats and chars.
+eg. char x,y;
+int z;
+x='a';
+y='b';
+z=x+y;
+as per ASCII a=97 nd b=98 so it can be added
+e=no operator is assumed to be present , must be written explicitly
+eg. a=c.d.b(xy) usual arth stmt
+b=c*d*b*(x*y) c stmt (* after b must be explicitly written)
+f=no operator for performing exonentiation opt
+eg. a=3**2;
+b=3^2;  wrong
+#include<math.h>   used for pow() to work
+{
+	int a;
+	a=pow(3,2);
+	printf("%d",a);
+}
+pow() is used as raise 3 power of 2
+g=modular division operator %
+
+ 
+c]control ins:
+to control the seq of execution of various statements in a C program.
+
